@@ -1,0 +1,281 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Noto+Sans+KR:wght@500&display=swap");
+
+#hamburger {
+  border: 0;
+  outline: 0;
+}
+
+button {
+  background-color: black;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 3;
+}
+
+body {
+  padding-top: 175px;
+}
+
+h2 {
+  text-align: left;
+  padding: 1.5rem 0 0.5rem 0;
+  font-size: 24px;
+}
+
+main {
+  font-family: Noto Sans KR;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 5fr 0.5fr 50px 5fr;
+  margin-top: 50px;
+}
+main {
+  text-align: center;
+}
+.home_title {
+  margin-top: 5rem;
+  font-family: Noto Sans KR;
+  font-size: 50px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.3;
+  letter-spacing: -0.5px;
+  color: #000000;
+}
+
+#main_btn {
+  margin-left: 1px;
+  border-radius: 10px;
+  height: 60px;
+  width: 60px;
+  border: none;
+  margin-right: auto;
+}
+
+.fa-search {
+  color: white;
+  align-items: center;
+}
+
+#BugBug {
+  width: 152px;
+  height: 40px;
+  margin: 0 122.7px 0 0;
+  font-family: "Montserrat", sans-serif;
+  font-size: 33px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.21;
+  letter-spacing: normal;
+  text-align: left;
+  color: #000000;
+}
+
+#Home {
+  width: 66px;
+  height: 25px;
+  margin: 8px 55px 7px;
+  font-family: Montserrat;
+  font-size: 21px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.19;
+  letter-spacing: 0.02px;
+  text-align: left;
+  color: #000000;
+}
+
+#Features {
+  width: 94px;
+  height: 25px;
+  margin: 8px 55px 7px;
+  font-family: Montserrat;
+  font-size: 21px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.19;
+  letter-spacing: 0.02px;
+  text-align: left;
+}
+
+#wio {
+  width: 200px;
+  height: 25px;
+  margin: 8px 0 7px 55px;
+  font-family: Montserrat;
+  font-size: 21px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.19;
+  letter-spacing: 0.02px;
+  text-align: left;
+}
+
+p {
+  padding-top: 4rem;
+  opacity: 0.8;
+  font-family: Noto Sans KR;
+  font-size: 1rem;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 2.71;
+  letter-spacing: -0.48px;
+  text-align: center;
+  color: #7d7d7d;
+}
+
+.intro {
+  color: black;
+  max-width: 660px;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: Noto Sans KR;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.75;
+  letter-spacing: -0.4px;
+  font-stretch: normal;
+  font-style: normal;
+  padding-bottom: 54px;
+}
+
+.in {
+  box-shadow: 0 20px 40px 0 rgba(0, 0, 0, 0.2);
+  border: none;
+  max-width: 6300px;
+  margin-left: auto;
+}
+
+#layout {
+  border-radius: 10px;
+  border: none;
+}
+
+.feature_list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: #fbfbfd;
+  padding-top: 67px;
+  padding-bottom: 83px;
+  grid-template-columns: repeat(auto-fill, 300px);
+  grid-template-rows: repeat(auto-fill);
+  gap: 40px 40px;
+}
+
+.feat {
+  text-align: left;
+  background-color: white;
+  border-radius: 13px;
+  width: 298px;
+  height: 289px;
+  padding: 0rem 2rem 0 2rem;
+  font-family: Noto Sans KR;
+  font-size: 18px;
+  box-shadow: 0 2px 14px 0 rgba(0, 0, 0, 0.08);
+}
+
+#first {
+  padding-top: 105px;
+  font-family: Noto Sans KR;
+  font-weight: bold;
+  padding-bottom: 54px;
+  font-size: 40px;
+}
+
+#second {
+  background-color: black;
+  color: white;
+  font-family: Noto Sans KR;
+  font-weight: bold;
+  font-size: 26px;
+  width: 400px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 5px;
+  padding-top: 2px;
+}
+
+/* contact css*/
+
+.contact-profile {
+  max-width: 80px;
+  max-height: 80px;
+  overflow: hidden;
+  border-radius: 30%;
+  box-shadow: 0 8px 14px 0 rgba(0, 0, 0, 0.28);
+}
+
+.feature_list2 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-top: 67px;
+  padding-bottom: 83px;
+
+  gap: 40px 40px;
+}
+
+.feat2 {
+  text-align: left;
+  background-color: #fbfbfd;
+  border-radius: 13px;
+  width: 500px;
+  padding: 1.5rem 2rem 0 2rem;
+  font-family: Noto Sans KR;
+  font-size: 18px;
+  box-shadow: 0 1px 14px 0 rgba(0, 0, 0, 0.13);
+}
+
+.full_name {
+  margin: 0 0 0 20px;
+  position: relative;
+
+  right: -15px;
+  font-family: Noto Sans KR;
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.contact-dot {
+  margin-top: 15px;
+  font-family: Noto Sans KR;
+  font-size: 23px;
+  font-weight: bold;
+}
+
+.contact-intro {
+  font-family: Noto Sans KR;
+  font-size: 18px;
+}
+
+.setting {
+  margin: 15px 0 25px 0;
+  float: right;
+}
+
+.in_line {
+  display: inline;
+}
+
+input {
+  margin: 0;
+  display: inline;
+  outline: none;
+  box-sizing: border-box;
+  color: black;
+}

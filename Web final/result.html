@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <style>
+      .navbar-brand {
+        font-weight: bold;
+      }
+
+      button {
+        background-color: black;
+      }
+
+      p,
+      h1 {
+        text-align: center;
+      }
+
+      h1 {
+        font-weight: bolder;
+      }
+
+      .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        margin-top: 50px;
+      }
+
+      #in {
+        border-radius: 10px;
+      }
+
+      #main_btn {
+        border-radius: 10px;
+        height: 50px;
+        width: 50px;
+      }
+
+      .search_btn {
+        align-items: center;
+        width: 15px;
+      }
+
+      .fa-search {
+        color: white;
+        align-items: center;
+      }
+
+      section {
+        display: grid;
+        gap: 20px;
+        grid-template-columns: repeat(4, 1fr);
+        font-family: Noto Sans KR;
+      }
+
+      header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+      }
+
+      body {
+        padding-top: 75px;
+      }
+    </style>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link href="bootstrap.css" rel="stylesheet" type="text/css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#" id="BugBug"> BugBug</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+            id="hamburger"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="index.html"
+                  id="Home"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="Features.html" id="Features"
+                  >Features</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="Contact.html" id="wio"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <h1>검색 결과</h1>
+      <h3>'{{keyword}}'에 대한 검색 결과 입니다.</h3>
+      <h5>총 {{resultNum}}개의 검색 결과</h5>
+      <a href="/export?word={{keyword}}">파일 다운로드</a>
+      <section>
+        <h4>Title</h4>
+        <h4>Company</h4>
+        <h4>Location</h4>
+        <h4>Link</h4>
+        {% for job in jobs %}
+        <span>{{job.Job}}</span>
+        <span>{{job.Company}}</span>
+        <span>{{job.Location}}</span>
+        <a href="{{job.Link}}" target="_blank">지원하기</a>
+        {% endfor %}
+      </section>
+    </main>
+    <footer></footer>
+  </body>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://kit.fontawesome.com/e3c2308f37.js"
+    crossorigin="anonymous"
+  ></script>
+</html>

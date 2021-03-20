@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<style>
+		.navbar-brand {
+			font-weight: bold;
+		}
+
+		button {
+			background-color: black;
+		}
+
+		p,
+		h1 {
+			text-align: center;
+		}
+
+		h1 {
+			font-weight: bolder;
+		}
+
+		.container {
+			display: grid;
+			grid-template-columns: 1fr 1fr 1fr;
+			margin-top: 50px;
+		}
+
+		#in {
+			border-radius: 10px;
+		}
+
+		#main_btn {
+			border-radius: 10px;
+			height: 50px;
+			width: 50px;
+		}
+
+		.search_btn {
+			align-items: center;
+			width: 15px;
+		}
+
+		.fa-search {
+			color: white;
+			align-items: center;
+		}
+	</style>
+	<link rel="stylesheet" type="text/css" />
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
+	 crossorigin="anonymous" />
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Document</title>
+</head>
+
+<body>
+	<header>
+		<nav class="navbar navbar-expand-lg navbar-light bg-light">
+			<div class="container-fluid">
+				<a class="navbar-brand" href="#">
+					<img
+              href="{{ url_for('static', filename='logo.png') }}"
+              alt=""
+              width="30"
+              height="30"
+              class="d-inline-block align-top"
+            />
+            BugBug</a
+          >
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Features.html">Features</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="GitHub.html">GitHub</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <br />
+      <p><h1>우리들의 취업 정보<br />BugBug<br />긁어모아 보자!</h1></p>
+      <form action = "/report" method="get">
+      <div class="input-group input-group-lg container">
+        <div></div>
+          <input
+            type="text"
+            class="form-control"
+            aria-label="Sizing example input"
+            aria-describedby="inputGroup-sizing-lg"
+            id="in"
+            required name="word"/>
+          <button type="submit" class="btn-lg" id="main_btn" >
+<i class="fas fa-search"></i>
+        </button>
+        <div></div>
+      </div>
+      </form>
+      <p>관심 있는 분야의 키워드를 입력하면 원하는 취업 정보 사이트의 정보를
+      모아드립니다!</p>
+    </main>
+    <footer></footer>
+  </body>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+    crossorigin="anonymous"
+  ></script>
+  <script src="https://kit.fontawesome.com/e3c2308f37.js" crossorigin="anonymous"></script>
+</html>

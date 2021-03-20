@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}" />
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='bootstrap.css') }}" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href={{ url_for('home') }} id="BugBug"> BugBug</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href={{ url_for('home') }}
+                  id="Home"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link disabled"
+                  href="#"
+                  tabindex="-1"
+                  aria-disabled="true"
+                  id="Features"
+                  >Features</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href={{ url_for('contact') }} id="wio"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <h1 id="first">키워드 기반 취업 정보 웹 크롤링 시스템</h1>
+      <h3 id="second">복잡하고 방대한 취업 자료를 한곳에.</h3>
+      <p class="intro">
+        키워드를 입력하여 검색하면, 취업 정보 사이트(indeed, 사람인)에서
+        <br />입력한 키워드를 바탕으로 취업정보를 모아 한 눈에 볼 수 있는 웹
+        사이트 입니다.
+      </p>
+      <div class="feature_list">
+        <div class="feat">
+          <h2>1.</h2>
+          <span>
+            취업 정보 사이트에서 키워드에 맞춰 검색된 결과 페이지를 <br />웹
+            크롤링 라이브러리인 requests와Beautifulsoup를 이용하여 크롤링
+            합니다.
+          </span>
+        </div>
+        <div class="feat">
+          <h2>2.</h2>
+          <span
+            >크롤링을 통해 모은 데이터를 <br />표 형식으로 결과창에서<br />
+            보여줍니다.</span
+          >
+        </div>
+        <div class="feat">
+          <h2>3.</h2>
+          <span>
+            사용자는 표에 있는 지원하기 <br />링크를 눌러 해당 구직 페이지에
+            리다이렉트 하여 정보를 <br />상세하게 확인할 수 있습니다.
+          </span>
+        </div>
+        <div class="feat">
+          <h2>4.</h2>
+          <span>
+            이 외에도, <br />datetime 라이브러리를 <br />활용하여 사용자가
+            입력한<br />
+            키워드와 현재시각이 포함된 <br />제목으로 저장된 결과파일을
+            <br />받아 볼 수 있습니다.
+          </span>
+        </div>
+      </div>
+    </main>
+    <footer></footer>
+  </body>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://kit.fontawesome.com/e3c2308f37.js"
+    crossorigin="anonymous"
+  ></script>
+</html>
