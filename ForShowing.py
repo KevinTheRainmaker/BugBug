@@ -1,3 +1,5 @@
+# You must check Sender info in Email Sending part(sendJobs) before you run
+
 import requests
 from bs4 import BeautifulSoup
 import pandas as pd
@@ -148,8 +150,8 @@ def saveJobs(job):
 
 def sendJobs(attachment):
     #Sender Info
-    me = 'bugbugoasis2021@gmail.com' # you must change here as your email
-    my_password = 'bugbugoasis2021' # Your password
+    me = '******@gmail.com' # you must change here as your gmail
+    my_password = '********' # Your password
 
     # Login
     s = smtplib.SMTP_SSL('smtp.gmail.com')
