@@ -27,7 +27,9 @@
 ## **3. 시연 영상 및 소개 페이지**
 ### https://www.notion.so/BugBug-B5-566195bdb1d7488e98b479a41589b3a8
 <br/>
+
 ---
+
 ## **4. 프로젝트 소개 리플렛**
 <img width="600px" src="https://user-images.githubusercontent.com/76294398/111862274-a4a0ca00-8997-11eb-8ae6-4baeeb22f343.png"/>
 
