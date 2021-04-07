@@ -1,5 +1,3 @@
-# You must check Sender info in Email Sending part(sendJobs) before you run
-
 import requests
 from bs4 import BeautifulSoup
 import pandas as pd
@@ -28,6 +26,10 @@ saramin_URL = f"http://www.saramin.co.kr/zf_user/search/recruit?searchType=searc
 
 def extract_pages(URL):
         results = requests.get(URL)
+        # try:
+        #     results = requests.get(URL)
+        # except requests.exceptions.ConnectionError:
+        #     print("Connection refused")
         soup = BeautifulSoup(results.text, "html.parser")
         pagination = soup.find("div", {"class": "pagination"})
         links = pagination.find_all('a')
@@ -150,8 +152,8 @@ def saveJobs(job):
 
 def sendJobs(attachment):
     #Sender Info
-    me = '******@gmail.com' # you must change here as your gmail
-    my_password = '********' # Your password
+    me = '*******@gmail.com'
+    my_password = '******'
 
     # Login
     s = smtplib.SMTP_SSL('smtp.gmail.com')
@@ -195,6 +197,12 @@ def sendJobs(attachment):
 
     s.quit()
 
-# Run
+# def main():
+#     jobs = returnJobs()
+#     saveJobs(jobs)
+
+# # Run
+# if __name__ == '__main__':
+#     main()
 jobs = returnJobs()
 saveJobs(jobs)
